@@ -1,36 +1,21 @@
 package model;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-
 public class Product {
     private int id;
     private String name;
     private int price;
     private int stock;
-    private Customer customer;
+    private Supplier supplier;
     private Categories category;
     final String PATH = "SuperMarket/src/resources/Customers.txt";
 
-    public Product(int id, String name, int price, int stock, Customer customer, Categories category) {
+    public Product(int id, String name, int price, int stock, Supplier supplier, Categories category) {
         this.id = id;
         this.name = name;
         this.price = price;
         this.stock = stock;
-        this.customer = customer;
+        this.supplier = supplier;
         this.category = category;
-    }
-
-    public void write() {
-        File file = new File(PATH);
-        try (FileWriter fileWriter = new FileWriter(file)) {
-            fileWriter.write(toString() + "\n");
-            fileWriter.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
     }
 
     public int getId() {
@@ -65,12 +50,12 @@ public class Product {
         this.stock = stock;
     }
 
-    public Customer getCustomer() {
-        return customer;
+    public Supplier getCustomer() {
+        return supplier;
     }
 
-    public void setCustomer(Customer customer) {
-        this.customer = customer;
+    public void setSupplier(Supplier supplier) {
+        this.supplier = supplier;
     }
 
     public Categories getCategory() {
@@ -84,7 +69,7 @@ public class Product {
     @Override
     public String toString() {
         return "Producto [id= " + id + ", nombre= " + name + ", precio= " + price + ", stock= " + stock
-                + ", distribuidor= " + customer
+                + ", distribuidor= " + supplier
                 + "Categoria= " + category + "]";
     }
 }

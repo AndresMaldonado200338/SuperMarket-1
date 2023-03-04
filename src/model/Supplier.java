@@ -19,7 +19,7 @@ public class Supplier extends Person{
 
     @Override
     public String toString() {
-        return "Cliente [ " + super.toString() + ", Sitio web=" + webSite + "]";
+        return "Proveedor [ " + super.toString() + ", Sitio web=" + webSite + "]";
     }
 
 }

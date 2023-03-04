@@ -1,22 +1,23 @@
 package Controller;
 
 import View.*;
+import model.*;
 
 public class Controller {
-    private  View view;
+    private View view;
 
     public Controller() {
         view = new View();
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Controller controller = new Controller();
         controller.run();
     }
 
-    public void run(){
-        int opcion = 0 ;
-        do{
+    public void run() {
+        int opcion = 0;
+        do {
             View.print("\n\t\t\t...BIENVENIDO...");
             opcion = view.menu();
 
@@ -38,6 +39,6 @@ public class Controller {
                 default:
                     View.print("Salio Del Programa");
             }
-        }while (opcion != 0);
+        } while (opcion != 0);
     }
 }

@@ -39,10 +39,12 @@ public class View {
         print("\n_______________________________________________________________________________");
         int opcion= 0;
         return opcion = leerEnteros("\nIngrese la opcion que desea relizar:"+
-                "\n[1] "+
-                "\n[2 "+
-                "\n[0]Salir");
-
+        "\n[1]Crear Proveedor "+
+        "\n[2] Crear Cliente "+
+        "\n[3]Crear Producto"+
+        "\n[4] Registrar Venta"+
+        "\n[5] Historial de ventas"+
+        "\n[0]Salir");
     }
 
 

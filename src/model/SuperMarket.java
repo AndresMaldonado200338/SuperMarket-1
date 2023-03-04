@@ -1,7 +1,8 @@
 package model;
-
-import java.util.ArrayList;
-
 public class SuperMarket {
 
+
+    public void createProduct(Product product){
+        
+    }
 }
