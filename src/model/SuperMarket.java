@@ -79,9 +79,4 @@ public class SuperMarket {
             e.printStackTrace();
         }
     }
-
-    public static void main(String[] args) {
-        SuperMarket superMarket = new SuperMarket();
-        superMarket.addCategories();
-    }
 }
