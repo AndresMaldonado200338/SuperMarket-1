@@ -1,14 +1,14 @@
 package model;
 
 public class Customer extends Person{
-    int number2;
+    long number2;
 
-    public Customer(int rut, String name, Address address, int number, int number2) {
+    public Customer(int rut, String name, Address address, long number, long number2) {
         super(rut, name, address, number);
         this.number2 = number2;
     }
 
-    public int getNumber2() {
+    public long getNumber2() {
         return number2;
     }
 

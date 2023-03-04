@@ -4,7 +4,7 @@ public class Supplier extends Person{
     
     String webSite;
 
-    public Supplier(int rut, String name, Address address, int number, String webSite) {
+    public Supplier(int rut, String name, Address address, long number, String webSite) {
         super(rut, name, address, number);
         this.webSite = webSite;
     }

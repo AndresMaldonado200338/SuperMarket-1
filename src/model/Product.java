@@ -3,13 +3,12 @@ package model;
 public class Product {
     private int id;
     private String name;
-    private int price;
+    private double price;
     private int stock;
     private Supplier supplier;
     private Categories category;
-    final String PATH = "SuperMarket/src/resources/Customers.txt";
 
-    public Product(int id, String name, int price, int stock, Supplier supplier, Categories category) {
+    public Product(int id, String name, double price, int stock, Supplier supplier, Categories category) {
         this.id = id;
         this.name = name;
         this.price = price;
@@ -34,7 +33,7 @@ public class Product {
         this.name = name;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
@@ -50,16 +49,16 @@ public class Product {
         this.stock = stock;
     }
 
-    public Supplier getCustomer() {
-        return supplier;
+    public String getSupplier() {
+        return supplier.getName();
     }
 
     public void setSupplier(Supplier supplier) {
         this.supplier = supplier;
     }
 
-    public Categories getCategory() {
-        return category;
+    public String getCategory() {
+        return category.getName();
     }
 
     public void setCategory(Categories category) {
@@ -69,7 +68,7 @@ public class Product {
     @Override
     public String toString() {
         return "Producto [id= " + id + ", nombre= " + name + ", precio= " + price + ", stock= " + stock
-                + ", distribuidor= " + supplier
-                + "Categoria= " + category + "]";
+                + ", distribuidor= " + supplier.getName()
+                + "Categoria= " + category.getName() + "]";
     }
 }

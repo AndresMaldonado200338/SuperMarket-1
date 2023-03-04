@@ -4,9 +4,9 @@ public class Person {
 	private int rut;
 	private String name;
 	private Address address;
-	private int number;
+	private long number;
 
-	public Person(int rut, String name, Address address, int number) {
+	public Person(int rut, String name, Address address, long number) {
 		this.rut = rut;
 		this.name = name;
 		this.address = address;
@@ -37,7 +37,7 @@ public class Person {
 		this.address = address;
 	}
 
-	public int getNumber() {
+	public long getNumber() {
 		return number;
 	}
 
@@ -47,6 +47,6 @@ public class Person {
 
 	@Override
 	public String toString() {
-		return "[Rut= " + rut + ", Nombre= " + name + ", Direccion= " + address + ", Número= " + number + "]";
+		return "[Rut= " + rut + ", Nombre= " + name + ", Direccion= " + address + ", Numero= " + number + "]";
 	}
 }
