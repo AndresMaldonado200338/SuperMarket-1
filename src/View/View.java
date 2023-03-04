@@ -45,6 +45,7 @@ public class View {
         "\n[4] Registrar Venta"+
         "\n[5] Historial de ventas"+
         "\n[0]Salir");
+
     }
 
 
