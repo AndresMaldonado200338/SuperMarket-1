@@ -18,6 +18,6 @@ public class Customer extends Person{
 
     @Override
     public String toString() {
-        return "Cliente [ " + super.toString() + ", Otro numero=" + number2 + "]";
+        return "Cliente [ " + super.toString() + ", Otro numero=" + number2 + "]\n";
     }
 }

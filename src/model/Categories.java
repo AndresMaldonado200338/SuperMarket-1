@@ -1,5 +1,6 @@
 package model;
 
+
 public enum Categories {
 
     FRUITS(1, "Frutas", "Categoria donde se almacenan las frutas"),
@@ -15,6 +16,7 @@ public enum Categories {
     private int id;
     private String name;
     private String description;
+
 
     Categories(int id, String name, String description) {
         this.id = id;
